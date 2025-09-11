@@ -40,7 +40,7 @@ jobs:
     - name: Build Spring Boot backend
       run: |
         cd backend
-        ./mvnw clean install -DskipTests
+        mvnw clean install -DskipTests
 
     # ========================
     # FRONTEND BUILD
