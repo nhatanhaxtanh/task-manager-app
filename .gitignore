@@ -1,0 +1,16 @@
+# Ignore backend build and config
+/backend/target/
+/backend/.idea/
+/backend/.classpath
+/backend/.project
+/backend/.settings/
+
+# Ignore frontend build
+/frontend/node_modules/
+/frontend/build/
+/frontend/.next/
+
+# OS/system files
+.DS_Store
+*.log
+.env
