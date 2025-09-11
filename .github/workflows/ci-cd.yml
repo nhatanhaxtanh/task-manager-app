@@ -39,7 +39,7 @@ jobs:
     # 3. Build backend
     - name: Build Spring Boot backend
       run: |
-        cd backend/demo   # 👈 chỉnh đúng path nếu cần
+        cd backend/demo
         mvn clean install -DskipTests
 
     # 4. Setup Node.js for frontend
