@@ -41,7 +41,7 @@ jobs:
       run: |
         cd backend
         cd demo
-        mvnw clean install -DskipTests
+        mvn clean install -DskipTests
 
     # ========================
     # FRONTEND BUILD
