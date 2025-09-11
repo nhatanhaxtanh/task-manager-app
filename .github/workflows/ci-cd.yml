@@ -40,6 +40,7 @@ jobs:
     - name: Build Spring Boot backend
       run: |
         cd backend
+        cd demo
         mvnw clean install -DskipTests
 
     # ========================
