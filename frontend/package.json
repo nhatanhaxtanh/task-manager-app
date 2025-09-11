@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "deploy": "vite build && vite preview --host",
+    "predeploy": "npm run build",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
