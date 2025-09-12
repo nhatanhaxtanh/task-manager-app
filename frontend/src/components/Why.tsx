@@ -1,21 +1,26 @@
 // src/components/WhySection.tsx
 import React from 'react';
+import {
+  Brain,
+  SlidersHorizontal,
+  BarChart3,
+} from 'lucide-react';
 
 const features = [
   {
     title: 'Dễ sử dụng',
     description: 'Giao diện trực quan, thao tác kéo thả giúp đội nhóm làm việc nhanh chóng mà không cần đào tạo.',
-    icon: '🧠',
+    icon: <Brain className="w-10 h-10 text-blue-600" />,
   },
   {
     title: 'Tùy biến linh hoạt',
     description: 'Dễ dàng tùy chỉnh theo quy trình riêng của từng doanh nghiệp hoặc nhóm làm việc.',
-    icon: '🎛️',
+    icon: <SlidersHorizontal className="w-10 h-10 text-purple-600" />,
   },
   {
     title: 'Báo cáo thông minh',
     description: 'Theo dõi tiến độ, hiệu suất cá nhân và nhóm theo thời gian thực.',
-    icon: '📊',
+    icon: <BarChart3 className="w-10 h-10 text-green-600" />,
   },
 ];
 
@@ -34,7 +39,7 @@ const WhySection: React.FC = () => {
               key={index}
               className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition"
             >
-              <div className="text-4xl mb-4">{feature.icon}</div>
+              <div className="mb-4 flex justify-center">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
             </div>
