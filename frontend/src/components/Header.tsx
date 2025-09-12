@@ -1,14 +1,18 @@
 import React from "react";
 import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="text-2xl font-extrabold">
-          CHIP<span className="text-gray-800">TASK</span>
-        </div>
+        <Link to="/task-manager-app">
+            <div className="text-2xl font-extrabold">
+            CHIP<span className="text-gray-800">TASK</span>
+            </div>
+        </Link>
+
 
         {/* Menu Items */}
         <nav className="hidden md:flex space-x-8 text-gray-700 font-medium">
