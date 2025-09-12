@@ -7,7 +7,7 @@ const Header: React.FC = () => {
     <header className="sticky top-0 z-50 w-full bg-white shadow-md px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link to="/task-manager-app">
+        <Link to="/task-manager-app/">
             <div className="text-2xl font-extrabold">
             CHIP<span className="text-gray-800">TASK</span>
             </div>
@@ -17,8 +17,9 @@ const Header: React.FC = () => {
         {/* Menu Items */}
         <nav className="hidden md:flex space-x-8 text-gray-700 font-medium">
           {[
-            { label: "Tính năng", href: "#features" },
-            { label: "Cách hoạt động", href: "#how-it-works" },
+            { label: "Trang chủ", href: "/" },
+            { label: "Tính năng", href: "/task-manager-app/features" },
+            { label: "Cách hoạt động", href: "/task-manager-app/howitworks" },
             { label: "Bảng giá", href: "#pricing" },
             { label: "Liên hệ", href: "#contact" },
           ].map(({ label, href }) => (
