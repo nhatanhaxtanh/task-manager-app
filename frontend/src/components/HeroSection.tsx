@@ -1,4 +1,5 @@
 import React from 'react';
+import heroImg from '@/assets/ok.jpg';
 
 const HeroSection: React.FC = () => {
   return (
@@ -27,7 +28,7 @@ const HeroSection: React.FC = () => {
         {/* Right image */}
         <div className="flex justify-center">
           <img
-            src="src/assets/ok.jpg"
+            src={heroImg}
             alt="Minh họa ứng dụng"
             className="w-full"
           />
