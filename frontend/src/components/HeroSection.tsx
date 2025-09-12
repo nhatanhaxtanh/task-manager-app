@@ -1,5 +1,6 @@
 import React from 'react';
 import heroImg from '@/assets/ok.jpg';
+import { Link } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   return (
@@ -15,13 +16,14 @@ const HeroSection: React.FC = () => {
           </p>
 
           <div className="flex space-x-4">
-            <button
-              onClick={() => window.location.href = '#get-started'}
-              className="px-6 py-3 bg-black text-white border border-transparent rounded-lg font-extrabold cursor-pointer transition hover:bg-white hover:text-black hover:border-black"
+            <Link to="/task-manager-app/authorization/login">
+                <button
+                    className="px-6 py-3 bg-black text-white border border-transparent rounded-lg font-extrabold cursor-pointer transition hover:bg-white hover:text-black hover:border-black"
+                    >
+                    Bắt Đầu Ngay
+                </button>
+            </Link>
 
-            >
-              Bắt Đầu Ngay
-            </button>
           </div>
         </div>
 

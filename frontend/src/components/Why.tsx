@@ -28,7 +28,7 @@ const WhySection: React.FC = () => {
   return (
     <section id="why" className="px-6 md:px-20 py-20 bg-gray-50 text-gray-800">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Vì sao chọn chúng tôi?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Vì sao bạn nên tin dùng CHIPTASK?</h2>
         <p className="text-gray-600 mb-12">
           Nền tảng quản lý dự án được thiết kế để tối ưu trải nghiệm người dùng và hiệu quả làm việc.
         </p>
@@ -37,7 +37,7 @@ const WhySection: React.FC = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition"
+              className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl cursor-pointer transition"
             >
               <div className="mb-4 flex justify-center">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
