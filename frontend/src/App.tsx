@@ -13,7 +13,7 @@ import HowItWorks from "./pages/HowItWorks";
 const router = createBrowserRouter([
   // Public routes under RootLayout
   {
-    path: "/task-manager-app",
+    path: "/task-manager-app/",
     element: <RootLayout />,
     children: [
       { index: true, element: <Home /> },
