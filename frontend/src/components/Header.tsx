@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex space-x-8 text-gray-700 font-medium">
           {[
             { label: "Trang chủ", href: "/task-manager-app/" },
-            { label: "Tính năng", href: "/task-manager-app/features/" },
+            { label: "Tính năng", href: "features" },
             { label: "Cách hoạt động", href: "/task-manager-app/howitworks" },
             { label: "Bảng giá", href: "#pricing" },
             { label: "Liên hệ", href: "#contact" },
